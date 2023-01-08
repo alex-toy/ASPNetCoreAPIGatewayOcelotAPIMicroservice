@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerAppDemo", "BlazorServerAppDemo\BlazorServerAppDemo.csproj", "{AE11B816-97FE-4516-94DC-779710B18891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerAppDemo", "BlazorServerAppDemo\BlazorServerAppDemo.csproj", "{AE11B816-97FE-4516-94DC-779710B18891}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerAuthenticationAndAuthorization", "BlazorServerAuthenticationAndAuthorization\BlazorServerAuthenticationAndAuthorization.csproj", "{42015DC8-10B9-47C1-B643-B24F2A956F17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AE11B816-97FE-4516-94DC-779710B18891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE11B816-97FE-4516-94DC-779710B18891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE11B816-97FE-4516-94DC-779710B18891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42015DC8-10B9-47C1-B643-B24F2A956F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42015DC8-10B9-47C1-B643-B24F2A956F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42015DC8-10B9-47C1-B643-B24F2A956F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42015DC8-10B9-47C1-B643-B24F2A956F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
