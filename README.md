@@ -4,3 +4,5 @@ Ocelot manipulates the HttpRequest object into a state specified by its configur
 
 
 https://www.youtube.com/watch?v=k4l3Ptd4yjw
+
+https://www.youtube.com/watch?v=dY_AWdCzsCY&list=PLzewa6pjbr3IQEUfNiK2SROQC1NuKl6PV
