@@ -6,7 +6,12 @@ Ocelot manipulates the HttpRequest object into a state specified by its configur
 
 <img src="/pictures/create_project.png" title="create project"  width="500">
 
+## Publish project
 
-https://www.youtube.com/watch?v=k4l3Ptd4yjw
+<img src="/pictures/publish_project.png" title="publish project"  width="500">
+<img src="/pictures/publish_project2.png" title="publish project"  width="500">
 
-https://www.youtube.com/watch?v=dY_AWdCzsCY&list=PLzewa6pjbr3IQEUfNiK2SROQC1NuKl6PV
+
+
+
+https://www.youtube.com/watch?v=ZCJKiwTMTSs&list=PLzewa6pjbr3JQKhB_U_FiuYwQC70i-TyU&index=4
