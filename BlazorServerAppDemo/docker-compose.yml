@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  demoblazorserverapp:
+    image: ${DOCKER_REGISTRY-}demoblazorserverapp
+    build:
+      context: .
+      dockerfile: DemoBlazorServerApp/Dockerfile

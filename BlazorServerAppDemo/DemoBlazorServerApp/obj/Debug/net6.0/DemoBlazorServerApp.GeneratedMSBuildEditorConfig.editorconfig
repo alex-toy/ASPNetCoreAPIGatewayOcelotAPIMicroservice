@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoBlazorServerApp
+build_property.RootNamespace = DemoBlazorServerApp
+build_property.ProjectDir = C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\BlazorServerAppDemo\DemoBlazorServerApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\BlazorServerAppDemo\DemoBlazorServerApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/UserAccount/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckFjY291bnRcQWRkVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/UserAccount/UserList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckFjY291bnRcVXNlckxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/UserAccount/UserRecord.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckFjY291bnRcVXNlclJlY29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/UserAccount/Users.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckFjY291bnRcVXNlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-egl0sp483b
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tjc1gbbdye
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/source/CsharpLibraries/ASPNetCoreAPIGatewayOcelotAPIMicroservice/BlazorServerAppDemo/DemoBlazorServerApp/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

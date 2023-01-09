@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["/BlazorServerAuthenticationAndAuthorization.csproj", "BlazorServerAuthenticationAndAuthorization/"]
+COPY ["BlazorServerAuthenticationAndAuthorization/BlazorServerAuthenticationAndAuthorization.csproj", "BlazorServerAuthenticationAndAuthorization/"]
 RUN dotnet restore "BlazorServerAuthenticationAndAuthorization/BlazorServerAuthenticationAndAuthorization.csproj"
 COPY . .
 WORKDIR "/src/BlazorServerAuthenticationAndAuthorization"
