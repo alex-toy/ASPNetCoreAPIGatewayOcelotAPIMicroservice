@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lmNKUoOMuZcEsnd4nd25prrNLmkAtD1wf80MhSfJk/Nmx9csH7KjlQvdXtYNM+KsK69kaUL4jh5x+sS0voPhlA==",
+  "success": true,
+  "projectFilePath": "C:\\source\\CsharpLibraries\\ASPNetCoreAPIGatewayOcelotAPIMicroservice\\DemoMicroserviceSolution\\BlazorServerWebUI\\BlazorServerWebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexe\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
