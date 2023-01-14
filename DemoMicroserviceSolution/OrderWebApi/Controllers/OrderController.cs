@@ -36,7 +36,7 @@ namespace OrderWebApi.Controllers
             return await _orderCollection.Find(filterDefinition).SingleOrDefaultAsync();
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public async Task<ActionResult> Create(Order order)
         {
             await _orderCollection.InsertOneAsync(order);

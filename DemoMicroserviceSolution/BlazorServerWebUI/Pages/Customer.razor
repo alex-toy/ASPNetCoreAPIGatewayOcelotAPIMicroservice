@@ -64,7 +64,7 @@
 
     private async Task SaveCustomer()
     {
-        await httpClient.PostAsJsonAsync<CustomerViewModel>("/api/Customer", newCustomer);
+        await httpClient.PostAsJsonAsync<CustomerViewModel>("/api/Customer/Create", newCustomer);
         await FetchCustomerList();
         newCustomer = new CustomerViewModel();
     }
