@@ -28,7 +28,7 @@ namespace CustomerWebApi.Controllers
             return customer;
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public async Task<ActionResult> Create(Customer customer)
         {
             await _customerDbContext.Customers.AddAsync(customer);

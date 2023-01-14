@@ -29,6 +29,17 @@ Choose *Docker compose* and *Linux*
 
 
 
+## Web API Microservice with SQL Server Entity Framework Core
+
+### Customer Web API
+
+<img src="/pictures/customer_api.png" title="customer api database"  width="800">
+<img src="/pictures/customer_api2.png" title="customer api postman"  width="800">
+<img src="/pictures/customer_api3.png" title="customer api postman"  width="800">
+
+### Product Web API
+
+<img src="/pictures/customer_api.png" title="customer api database"  width="800">
 
 https://www.youtube.com/watch?v=ZCJKiwTMTSs&list=PLzewa6pjbr3JQKhB_U_FiuYwQC70i-TyU&index=4
 
