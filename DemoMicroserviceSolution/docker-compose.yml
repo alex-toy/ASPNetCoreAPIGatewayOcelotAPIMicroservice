@@ -58,4 +58,28 @@ services:
       - DB_ROOT_PASSWORD=password@12345#
     ports:
      - 18004:80
+
+     
+  
+  orderdb:
+    container_name: order-db
+    image: mongo
+    ports:
+      - 18005:27017
+    networks:
+      - backend
+
+  orderwebapi:
+    container_name: order-api
+    image: ${DOCKER_REGISTRY-}orderwebapi
+    build:
+      context: .
+      dockerfile: OrderWebApi/Dockerfile
+    networks:
+      - backend
+    environment:
+      - DB_HOST=orderdb
+      - DB_NAME=dms_order
+    ports:
+      - 18006:80
   
