@@ -1,8 +1,35 @@
 version: '3.4'
 
+networks:
+  demoblazorapp:
+
 services:
+
+  demoappdb:
+    container_name: app-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+       - 8002:1433
+    environment: 
+     - ACCEPT_EULA=Y
+     - MSSQL_SA_PASSWORD=Password@123
+    networks:
+     - demoblazorapp
+
+
   demoblazorserverapp:
+    container_name: demo-blazor-app
     image: ${DOCKER_REGISTRY-}demoblazorserverapp
     build:
       context: .
       dockerfile: DemoBlazorServerApp/Dockerfile
+    ports:
+       - 8001:80
+    depends_on:
+     - demoappdb
+    environment: 
+     - DB_HOST=demoappdb
+     - DB_NAME=DemoBlazorApp
+     - DB_SA_PASSWORD=Password@123
+    networks:
+     - demoblazorapp

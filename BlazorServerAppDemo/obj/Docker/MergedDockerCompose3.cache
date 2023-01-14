@@ -1,0 +1,33 @@
+name: dockercompose13858004122426824929
+services:
+  demoappdb:
+    container_name: app-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8002"
+      protocol: tcp
+  demoblazorserverapp:
+    build:
+      context: C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\BlazorServerAppDemo
+      dockerfile: DemoBlazorServerApp/Dockerfile
+    container_name: demo-blazor-app
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: demoblazorserverapp
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8001"
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose13858004122426824929_default

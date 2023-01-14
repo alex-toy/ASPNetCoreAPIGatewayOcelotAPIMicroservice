@@ -20,7 +20,12 @@ Ocelot manipulates the HttpRequest object into a state specified by its configur
 ### Container orchestrator support
 
 Choose *Docker compose* and *Linux*
+
 <img src="/pictures/container_orchestrator_support.png" title="container orchestrator support"  width="500">
+
+### Docker compose
+
+<img src="/pictures/app_db.png" title="application running with a sql database"  width="800">
 
 
 
