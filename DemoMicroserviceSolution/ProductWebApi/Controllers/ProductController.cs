@@ -28,7 +28,7 @@ namespace ProductWebApi.Controllers
             return product;
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         public async Task<ActionResult> Create(Product product)
         {
             await _dbContext.Products.AddAsync(product);

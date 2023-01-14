@@ -30,6 +30,8 @@ services:
       - DB_HOST=customerdb
       - DB_NAME=dms_customer
       - DB_SA_PASSWORD=password@12345#
+    ports:
+      - 18002:80
 
       
   productdb:
@@ -54,4 +56,6 @@ services:
       - DB_HOST=productdb
       - DB_NAME=dms_product
       - DB_ROOT_PASSWORD=password@12345#
+    ports:
+     - 18004:80
   

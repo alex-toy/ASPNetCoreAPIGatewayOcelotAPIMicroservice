@@ -39,7 +39,12 @@ Choose *Docker compose* and *Linux*
 
 ### Product Web API
 
-<img src="/pictures/customer_api.png" title="customer api database"  width="800">
+<img src="/pictures/product_api.png" title="product api create"  width="800">
+<img src="/pictures/product_api2.png" title="product api get"  width="800">
+
+
+
+
 
 https://www.youtube.com/watch?v=ZCJKiwTMTSs&list=PLzewa6pjbr3JQKhB_U_FiuYwQC70i-TyU&index=4
 
