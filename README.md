@@ -53,6 +53,21 @@ Choose *Docker compose* and *Linux*
 
 
 
+## Ocelot API Microservice
+
+### Customer Web API
+
+<img src="/pictures/ocelot_customer_api.png" title="ocelot customer api"  width="800">
+<img src="/pictures/ocelot_customer_api2.png" title="ocelot customer api"  width="800">
+<img src="/pictures/ocelot_customer_api3.png" title="ocelot customer api"  width="800">
+
+### Product Web API
+
+<img src="/pictures/ocelot_product_api.png" title="ocelot product api"  width="800">
+<img src="/pictures/ocelot_product_api2.png" title="ocelot product api"  width="800">
+
+
+
 
 
 https://www.youtube.com/watch?v=ZCJKiwTMTSs&list=PLzewa6pjbr3JQKhB_U_FiuYwQC70i-TyU&index=4

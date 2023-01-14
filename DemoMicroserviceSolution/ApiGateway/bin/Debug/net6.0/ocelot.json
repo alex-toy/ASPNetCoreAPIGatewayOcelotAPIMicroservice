@@ -1,9 +1,10 @@
 {
   "Routes": [
+
     // Customer Web API
     {
       "UpstreamPathTemplate": "/api/Customer",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "UpstreamHttpMethod": [ "Get", "Put" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -12,6 +13,18 @@
         }
       ],
       "DownstreamPathTemplate": "/api/Customer"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Customer/Create",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Customer/Create"
     },
     {
       "UpstreamPathTemplate": "/api/Customer/{customerId}",
@@ -26,10 +39,11 @@
       "DownstreamPathTemplate": "/api/Customer/{customerId}"
     },
 
+
     //Product Web API
     {
       "UpstreamPathTemplate": "/api/Product",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "UpstreamHttpMethod": [ "Get", "Put" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -38,6 +52,18 @@
         }
       ],
       "DownstreamPathTemplate": "/api/Product"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Product/Create",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Product/Create"
     },
     {
       "UpstreamPathTemplate": "/api/Product/{productId}",

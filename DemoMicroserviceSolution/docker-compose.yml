@@ -30,8 +30,6 @@ services:
       - DB_HOST=customerdb
       - DB_NAME=dms_customer
       - DB_SA_PASSWORD=password@12345#
-    ports:
-      - 18002:80
 
       
   productdb:
@@ -56,10 +54,7 @@ services:
       - DB_HOST=productdb
       - DB_NAME=dms_product
       - DB_ROOT_PASSWORD=password@12345#
-    ports:
-     - 18004:80
 
-     
   
   orderdb:
     container_name: order-db
@@ -80,6 +75,17 @@ services:
     environment:
       - DB_HOST=orderdb
       - DB_NAME=dms_order
+      
+
+  apigateway:
+    container_name: api-gateway
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
     ports:
-      - 18006:80
+      - 8001:80
+    networks:
+      - backend
+      - frontend
   
