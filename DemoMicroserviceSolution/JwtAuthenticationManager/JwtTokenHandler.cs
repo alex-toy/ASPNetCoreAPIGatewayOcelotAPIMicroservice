@@ -8,7 +8,7 @@ namespace JwtAuthenticationManager
 {
     public class JwtTokenHandler
     {
-        public const string JWT_SECURITY_KEY = "abcd1234";
+        public const string JWT_SECURITY_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY3Mzc3NDY2NywiaWF0IjoxNjczNzc0NjY3fQ.XzfLCkiF8MSx9zZIk09JQr5W9k8-YXW3ftajrorBXyE";
         private const int JWT_TOKEN_VALIDITY_MINS = 20;
         private readonly List<UserAccount> userAccounts;
 
@@ -26,7 +26,7 @@ namespace JwtAuthenticationManager
             bool noUserName = string.IsNullOrEmpty(authenticationRequest.UserName);
             bool noPassword = string.IsNullOrEmpty(authenticationRequest.Password);
 
-            if (noUserName && noPassword)
+            if (noUserName || noPassword)
             {
                 return null;
             }

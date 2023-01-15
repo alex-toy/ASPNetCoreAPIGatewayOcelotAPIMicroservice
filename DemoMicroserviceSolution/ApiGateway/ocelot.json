@@ -26,7 +26,11 @@
           "Port": 80
         }
       ],
-      "DownstreamPathTemplate": "/api/Customer"
+      "DownstreamPathTemplate": "/api/Customer",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes" :  []
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Customer/Create",

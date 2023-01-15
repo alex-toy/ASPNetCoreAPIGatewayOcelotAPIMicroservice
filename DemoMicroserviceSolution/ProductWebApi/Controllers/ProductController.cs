@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProductWebApi.Models;
 
@@ -16,6 +16,7 @@ namespace ProductWebApi.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
             return _dbContext.Products;
@@ -29,6 +30,7 @@ namespace ProductWebApi.Controllers
         }
 
         [HttpPost("Create")]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult> Create(Product product)
         {
             await _dbContext.Products.AddAsync(product);

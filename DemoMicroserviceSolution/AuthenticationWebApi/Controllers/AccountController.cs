@@ -15,7 +15,6 @@ namespace AuthenticationWebApi.Controllers
             _jwtTokenHandler = jwtTokenHandler;
         }
 
-        // POST api/<AccountController>
         [HttpPost]
         public ActionResult<AuthenticationResponse> Authenticate([FromBody] AuthenticationRequest authenticationRequest)
         {

@@ -30,3 +30,15 @@ C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroser
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\obj\Debug\net6.0\ApiGateway.pdb
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\obj\Debug\net6.0\ApiGateway.genruntimeconfig.cache
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\obj\Debug\net6.0\ref\ApiGateway.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\JwtAuthenticationManager.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\ApiGateway\bin\Debug\net6.0\JwtAuthenticationManager.pdb

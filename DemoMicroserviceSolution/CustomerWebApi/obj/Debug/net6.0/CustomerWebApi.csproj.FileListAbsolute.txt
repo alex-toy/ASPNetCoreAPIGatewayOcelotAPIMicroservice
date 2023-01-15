@@ -54,3 +54,8 @@ C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroser
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\obj\Debug\net6.0\CustomerWebApi.pdb
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\obj\Debug\net6.0\CustomerWebApi.genruntimeconfig.cache
 C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\obj\Debug\net6.0\ref\CustomerWebApi.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\bin\Debug\net6.0\JwtAuthenticationManager.dll
+C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution\CustomerWebApi\bin\Debug\net6.0\JwtAuthenticationManager.pdb
