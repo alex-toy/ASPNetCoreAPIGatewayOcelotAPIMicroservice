@@ -102,6 +102,16 @@ Microsoft.Extensions.DependencyInjection.Abstraction
 <img src="/pictures/authentication2.png" title="wrong password"  width="800">
 <img src="/pictures/authentication3.png" title="get customer without token"  width="800">
 
-to be continued with : 
 
-https://www.youtube.com/watch?v=3Q_aNm6gJiM
+
+
+# Net Core JWT Authentication - .Net Core JWT Token - ASP.Net Core 5 JWT
+
+## Packages
+```
+Microsoft.AspNetCore.Authentication
+Microsoft.AspNetCore.Authentication.JwtBearer
+System.IdentityModel.Tokens.Jwt
+```
+
+https://www.youtube.com/watch?v=3Q_aNm6gJiMx
