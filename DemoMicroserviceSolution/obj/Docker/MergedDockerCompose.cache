@@ -14,6 +14,19 @@ services:
       target: 80
       published: "8001"
       protocol: tcp
+  blazorserverwebui:
+    build:
+      context: C:\source\CsharpLibraries\ASPNetCoreAPIGatewayOcelotAPIMicroservice\DemoMicroserviceSolution
+      dockerfile: BlazorServerWebUI/Dockerfile
+    container_name: blazor-web-ui
+    image: blazorserverwebui
+    networks:
+      frontend: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8002"
+      protocol: tcp
   customerdb:
     container_name: customer-db
     environment:
@@ -44,10 +57,6 @@ services:
     - mode: ingress
       target: 80
       protocol: tcp
-    - mode: ingress
-      target: 80
-      published: "18002"
-      protocol: tcp
   orderdb:
     container_name: order-db
     image: mongo
@@ -69,11 +78,6 @@ services:
     image: orderwebapi
     networks:
       backend: null
-    ports:
-    - mode: ingress
-      target: 80
-      published: "18006"
-      protocol: tcp
   productdb:
     container_name: product-db
     environment:
@@ -98,11 +102,6 @@ services:
     image: productwebapi
     networks:
       backend: null
-    ports:
-    - mode: ingress
-      target: 80
-      published: "18004"
-      protocol: tcp
 networks:
   backend:
     name: dockercompose2926802245265586843_backend

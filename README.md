@@ -92,7 +92,11 @@ Choose *Docker compose* and *Linux*
 ```
 Microsoft.IdentityModel.Tokens
 System.IdentityModel.Tokens.Jwt
+Microsoft.Extensions.DependencyInjection.Abstraction
 ```
+
+
+## Authentication API
 
 ### Packages
 
