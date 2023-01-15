@@ -84,3 +84,17 @@ Choose *Docker compose* and *Linux*
 <img src="/pictures/blazor.png" title="frontend app"  width="800">
 <img src="/pictures/blazor2.png" title="frontend app"  width="800">
 
+
+
+## Ocelot API Gateway JWT Authentication
+
+### Packages
+```
+Microsoft.IdentityModel.Tokens
+System.IdentityModel.Tokens.Jwt
+```
+
+### Packages
+
+<img src="/pictures/ocelot_customer_api.png" title="ocelot customer api"  width="800">
+
