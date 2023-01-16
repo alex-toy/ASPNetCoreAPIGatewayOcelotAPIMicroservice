@@ -114,4 +114,37 @@ Microsoft.AspNetCore.Authentication.JwtBearer
 System.IdentityModel.Tokens.Jwt
 ```
 
+Get Url for App Settings :
+
+<img src="/pictures/url.png" title="url"  width="800">
+
 https://www.youtube.com/watch?v=3Q_aNm6gJiMx
+
+
+
+
+# ASP.NET Core Web API Authentication and Authorization with JWT
+
+## Packages
+```
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.IdentityModel.Tokens
+System.IdentityModel.Tokens.Jwt
+```
+
+https://www.youtube.com/watch?v=kM1fPt1BcLc
+https://github.com/iulianoana/jwt-dotnetcore-web/
+
+
+
+## Authentification avec JWT Token d’une API web avec ASP.NET Core - C#
+
+## Packages
+```
+Microsoft.AspNetCore.Authentication.JwtBearer
+Microsoft.IdentityModel.Tokens
+System.IdentityModel.Tokens.Jwt
+```
+
+https://www.youtube.com/watch?v=GkfWs-CwneA
+https://github.com/kmeziane/JwtApi
