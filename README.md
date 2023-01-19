@@ -118,6 +118,10 @@ Get Url for App Settings :
 
 <img src="/pictures/url.png" title="url"  width="800">
 
+Get a token :
+
+<img src="/pictures/token.png" title="token"  width="800">
+
 https://www.youtube.com/watch?v=3Q_aNm6gJiMx
 
 

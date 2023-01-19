@@ -16,10 +16,10 @@ namespace JwtAuthDemo.Controllers
             var jwtAuthenticationManager = new JwtAuthenticationManager();
             User user = new User { Name = authenticationRequest.UserName, Password = authenticationRequest.Password };
             var authResult = jwtAuthenticationManager.Authenticate(user);
-            if (authResult == null)
-                return Unauthorized();
-            else
-                return Ok(authResult);
+
+            if (authResult == null) return Unauthorized();
+
+            return Ok(authResult);
         }
     }
 }
