@@ -118,11 +118,17 @@ Get Url for App Settings :
 
 <img src="/pictures/url.png" title="url"  width="800">
 
+Get a token with wrong password:
+
+<img src="/pictures/token_wrong_password.png" title="token with wrong password"  width="800">
+
 Get a token :
 
 <img src="/pictures/token.png" title="token"  width="800">
 
-https://www.youtube.com/watch?v=3Q_aNm6gJiMx
+Use a token :
+
+<img src="/pictures/use_token.png" title="use token"  width="800">
 
 
 
