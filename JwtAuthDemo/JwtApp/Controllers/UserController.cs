@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
 
 namespace JwtApp.Controllers
@@ -12,22 +11,20 @@ namespace JwtApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-
         [HttpGet("Admins")]
         [Authorize(Roles = "Administrator")]
         public IActionResult AdminsEndpoint()
         {
-            var currentUser = GetCurrentUser();
+            var currentUser = GetCurrentUserFromHttpContext();
 
             return Ok($"Hi {currentUser.GivenName}, you are an {currentUser.Role}");
         }
-
 
         [HttpGet("Sellers")]
         [Authorize(Roles = "Seller")]
         public IActionResult SellersEndpoint()
         {
-            UserModel currentUser = GetCurrentUser();
+            UserModel currentUser = GetCurrentUserFromHttpContext();
 
             return Ok($"Hi {currentUser.GivenName}, you are a {currentUser.Role}");
         }
@@ -36,7 +33,7 @@ namespace JwtApp.Controllers
         [Authorize(Roles = "Administrator,Seller")]
         public IActionResult AdminsAndSellersEndpoint()
         {
-            UserModel currentUser = GetCurrentUser();
+            UserModel currentUser = GetCurrentUserFromHttpContext();
 
             return Ok($"Hi {currentUser.GivenName}, you are an {currentUser.Role}");
         }
@@ -47,7 +44,7 @@ namespace JwtApp.Controllers
             return Ok("Hi, you're on public property");
         }
 
-        private UserModel GetCurrentUser()
+        private UserModel GetCurrentUserFromHttpContext()
         {
             ClaimsIdentity identity = HttpContext.User.Identity as ClaimsIdentity;
 
@@ -63,11 +60,11 @@ namespace JwtApp.Controllers
 
             return new UserModel
             {
-                Username = userClaims.GetUserClaim(ClaimTypes.NameIdentifier),
-                EmailAddress = userClaims.GetUserClaim(ClaimTypes.Email),
-                GivenName = userClaims.GetUserClaim(ClaimTypes.GivenName),
-                Surname = userClaims.GetUserClaim(ClaimTypes.Surname),
-                Role = userClaims.GetUserClaim(ClaimTypes.Role)
+                Username = userClaims.ExtractUserClaim(ClaimTypes.NameIdentifier),
+                EmailAddress = userClaims.ExtractUserClaim(ClaimTypes.Email),
+                GivenName = userClaims.ExtractUserClaim(ClaimTypes.GivenName),
+                Surname = userClaims.ExtractUserClaim(ClaimTypes.Surname),
+                Role = userClaims.ExtractUserClaim(ClaimTypes.Role)
             };
         }
     }

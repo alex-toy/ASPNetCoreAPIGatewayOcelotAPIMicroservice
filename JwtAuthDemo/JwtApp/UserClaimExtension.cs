@@ -6,7 +6,7 @@ namespace JwtApp
 {
     public static class UserClaimExtension
     {
-        public static string GetUserClaim(this IEnumerable<Claim> userClaims, string value)
+        public static string ExtractUserClaim(this IEnumerable<Claim> userClaims, string value)
         {
             return userClaims.FirstOrDefault(claim => claim.Type == value)?.Value;
         }

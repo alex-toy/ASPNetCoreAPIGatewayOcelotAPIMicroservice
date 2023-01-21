@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthDemo", "JwtAuthDemo\JwtAuthDemo.csproj", "{2211E7E4-6154-4871-9A31-937EDA767ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtApp", "JwtApp\JwtApp.csproj", "{78A777F4-B3AC-48D6-8147-2CBCF7C2E504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtApp", "JwtApp\JwtApp.csproj", "{78A777F4-B3AC-48D6-8147-2CBCF7C2E504}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtApiMez", "JwtApiMez\JwtApiMez.csproj", "{04F7C3CF-E64B-4F51-96DE-5F3DD5602C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{78A777F4-B3AC-48D6-8147-2CBCF7C2E504}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A777F4-B3AC-48D6-8147-2CBCF7C2E504}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A777F4-B3AC-48D6-8147-2CBCF7C2E504}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F7C3CF-E64B-4F51-96DE-5F3DD5602C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F7C3CF-E64B-4F51-96DE-5F3DD5602C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F7C3CF-E64B-4F51-96DE-5F3DD5602C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F7C3CF-E64B-4F51-96DE-5F3DD5602C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
