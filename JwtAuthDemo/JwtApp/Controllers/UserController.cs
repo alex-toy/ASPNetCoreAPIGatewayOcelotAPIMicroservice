@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
@@ -26,7 +27,7 @@ namespace JwtApp.Controllers
         [Authorize(Roles = "Seller")]
         public IActionResult SellersEndpoint()
         {
-            var currentUser = GetCurrentUser();
+            UserModel currentUser = GetCurrentUser();
 
             return Ok($"Hi {currentUser.GivenName}, you are a {currentUser.Role}");
         }
@@ -35,7 +36,7 @@ namespace JwtApp.Controllers
         [Authorize(Roles = "Administrator,Seller")]
         public IActionResult AdminsAndSellersEndpoint()
         {
-            var currentUser = GetCurrentUser();
+            UserModel currentUser = GetCurrentUser();
 
             return Ok($"Hi {currentUser.GivenName}, you are an {currentUser.Role}");
         }
@@ -48,22 +49,26 @@ namespace JwtApp.Controllers
 
         private UserModel GetCurrentUser()
         {
-            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            ClaimsIdentity identity = HttpContext.User.Identity as ClaimsIdentity;
 
-            if (identity != null)
+            if (identity == null) return null;
+
+            UserModel userModel = GetUserModelFromClaim(identity);
+            return userModel;
+        }
+
+        private UserModel GetUserModelFromClaim(ClaimsIdentity identity)
+        {
+            IEnumerable<Claim> userClaims = identity.Claims;
+
+            return new UserModel
             {
-                var userClaims = identity.Claims;
-
-                return new UserModel
-                {
-                    Username = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value,
-                    EmailAddress = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.Email)?.Value,
-                    GivenName = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.GivenName)?.Value,
-                    Surname = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.Surname)?.Value,
-                    Role = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.Role)?.Value
-                };
-            }
-            return null;
+                Username = userClaims.GetUserClaim(ClaimTypes.NameIdentifier),
+                EmailAddress = userClaims.GetUserClaim(ClaimTypes.Email),
+                GivenName = userClaims.GetUserClaim(ClaimTypes.GivenName),
+                Surname = userClaims.GetUserClaim(ClaimTypes.Surname),
+                Role = userClaims.GetUserClaim(ClaimTypes.Role)
+            };
         }
     }
 }

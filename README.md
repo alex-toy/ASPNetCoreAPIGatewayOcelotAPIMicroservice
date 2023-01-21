@@ -154,9 +154,15 @@ Decode token :
 
 <img src="/pictures/decode_token.png" title="decode token"  width="800">
 
-Use a token :
+Use a token as admin :
 
-<img src="/pictures/use_token.png" title="use token"  width="800">
+<img src="/pictures/use_token_admin2.png" title="use token admin"  width="800">
+<img src="/pictures/use_token_admin.png" title="use token admin"  width="800">
+
+Use a token as seller :
+
+<img src="/pictures/use_token_seller.png" title="use token seller"  width="800">
+<img src="/pictures/use_token_seller2.png" title="use token seller"  width="800">
 
 
 
