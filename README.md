@@ -175,5 +175,18 @@ Microsoft.IdentityModel.Tokens
 System.IdentityModel.Tokens.Jwt
 ```
 
-https://www.youtube.com/watch?v=GkfWs-CwneA
-https://github.com/kmeziane/JwtApi
+Get a token with wrong password:
+
+<img src="/pictures/mez_wrong.png" title="user not found"  width="800">
+
+Get a token :
+
+<img src="/pictures/mez_token.png" title="user found"  width="800">
+
+Multiply :
+
+<img src="/pictures/multiply.png" title="multiply"  width="800">
+
+Divide :
+
+<img src="/pictures/divide.png" title="divide"  width="800">

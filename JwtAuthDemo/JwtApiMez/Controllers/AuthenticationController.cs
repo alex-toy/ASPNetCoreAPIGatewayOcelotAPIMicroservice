@@ -1,10 +1,7 @@
 ﻿using JwtApiMez.AuthenticationUtils;
 using JwtApiMez.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
-using System.Security.Claims;
 
 namespace JwtApiMez.Controllers
 {
@@ -12,12 +9,12 @@ namespace JwtApiMez.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        private readonly IJwtAuthenticationService _jwtAuthenticationService;
+        private readonly IJwtAuthenticationService _jwtAuthService;
         private readonly IConfiguration _config;
 
         public AuthenticationController(IJwtAuthenticationService JwtAuthenticationService, IConfiguration config)
         {
-            _jwtAuthenticationService = JwtAuthenticationService;
+            _jwtAuthService = JwtAuthenticationService;
             _config = config;
         }
 
@@ -25,21 +22,11 @@ namespace JwtApiMez.Controllers
         [Route("login")]
         public IActionResult Login([FromBody] LoginModel model)
         {
-            var user = _jwtAuthenticationService.Authenticate(model.Email, model.Password);
+            var user = _jwtAuthService.Authenticate(model);
             if (user == null) return Unauthorized();
 
-            List<Claim> claims = GetClaim(user);
-            var token = _jwtAuthenticationService.GenerateToken(_config["Jwt:Key"], claims);
+            var token = _jwtAuthService.GenerateToken(user);
             return Ok(token);
-        }
-
-        private static List<Claim> GetClaim(User user)
-        {
-            return new List<Claim>
-            {
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Name, user.Name),
-            };
         }
     }
 }

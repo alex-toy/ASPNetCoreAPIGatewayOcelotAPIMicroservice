@@ -1,12 +1,12 @@
 ﻿using JwtApiMez.Models;
-using System.Collections.Generic;
-using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
 
 namespace JwtApiMez.AuthenticationUtils
 {
     public interface IJwtAuthenticationService
     {
-        User Authenticate(string email, string password);
-        string GenerateToken(string secret, List<Claim> claims);
+        User Authenticate(LoginModel model);
+        string GenerateToken(User user);
+        User GetCurrentUserFromHttpContext(HttpContext httpContext);
     }
 }
