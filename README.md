@@ -142,8 +142,21 @@ Microsoft.IdentityModel.Tokens
 System.IdentityModel.Tokens.Jwt
 ```
 
-https://www.youtube.com/watch?v=kM1fPt1BcLc
-https://github.com/iulianoana/jwt-dotnetcore-web/
+Get a token with wrong password:
+
+<img src="/pictures/user_not_found.png" title="user not found"  width="800">
+
+Get a token :
+
+<img src="/pictures/user_found.png" title="user found"  width="800">
+
+Decode token :
+
+<img src="/pictures/decode_token.png" title="decode token"  width="800">
+
+Use a token :
+
+<img src="/pictures/use_token.png" title="use token"  width="800">
 
 
 

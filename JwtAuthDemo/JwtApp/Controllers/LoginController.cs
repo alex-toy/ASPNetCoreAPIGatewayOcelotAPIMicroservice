@@ -28,23 +28,20 @@ namespace JwtApp.Controllers
         [HttpPost]
         public IActionResult Login([FromBody] UserLogin userLogin)
         {
-            var user = Authenticate(userLogin);
+            UserModel user = Authenticate(userLogin);
 
-            if (user != null)
-            {
-                var token = Generate(user);
-                return Ok(token);
-            }
+            if (user == null) return NotFound("User not found");
 
-            return NotFound("User not found");
+            string token = GenerateToken(user);
+            return Ok(token);
         }
 
-        private string Generate(UserModel user)
+        private string GenerateToken(UserModel user)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            SigningCredentials credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
+            Claim[] claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Username),
                 new Claim(ClaimTypes.Email, user.EmailAddress),
@@ -53,25 +50,23 @@ namespace JwtApp.Controllers
                 new Claim(ClaimTypes.Role, user.Role)
             };
 
-            var token = new JwtSecurityToken(_config["Jwt:Issuer"],
-              _config["Jwt:Audience"],
-              claims,
-              expires: DateTime.Now.AddMinutes(15),
-              signingCredentials: credentials);
+            JwtSecurityToken token = new JwtSecurityToken(_config["Jwt:Issuer"], _config["Jwt:Audience"],
+                                                          claims, expires: DateTime.Now.AddMinutes(15),
+                                                          signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
         private UserModel Authenticate(UserLogin userLogin)
         {
-            var currentUser = UserConstants.Users.FirstOrDefault(o => o.Username.ToLower() == userLogin.Username.ToLower() && o.Password == userLogin.Password);
+            UserModel userDb = UserConstants.Users.FirstOrDefault(userDb => IsUserDb(userLogin, userDb));
 
-            if (currentUser != null)
-            {
-                return currentUser;
-            }
+            return userDb ?? null;
+        }
 
-            return null;
+        private static bool IsUserDb(UserLogin userLogin, UserModel userModel)
+        {
+            return userModel.Username.ToLower() == userLogin.Username.ToLower() && userModel.Password == userLogin.Password;
         }
     }
 }
